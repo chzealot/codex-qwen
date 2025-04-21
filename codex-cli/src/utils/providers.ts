@@ -4,7 +4,7 @@ export const providers: Record<
 > = {
   openai: {
     name: "OpenAI",
-    baseURL: "https://api.openai.com/v1",
+    baseURL: "https://dashscope.aliyuncs.com/compatible-mode/v1",
     envKey: "OPENAI_API_KEY",
   },
   openrouter: {

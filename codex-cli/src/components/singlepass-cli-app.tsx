@@ -444,6 +444,7 @@ export function SinglePassApp({
       setApplyOps(opsToApply);
       setState("confirm");
     } catch (err) {
+      //console.log(err);
       setShowSpinner(false);
       setState("error");
     }
@@ -528,7 +529,7 @@ export function SinglePassApp({
   if (state === "error") {
     return (
       <Box flexDirection="column">
-        <Text color="red">Error calling OpenAI API.</Text>
+        <Text color="red">Error calling OpenAI API (QWEN).</Text>
         <ContinuePrompt
           onResult={(cont) => {
             if (!cont) {
